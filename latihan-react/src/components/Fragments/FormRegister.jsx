@@ -1,19 +1,25 @@
 import React from "react";
 import InputForm from "../Elements/Input";
 
-const FormLogin = () => {
+const FormRegister = () => {
   return (
     <form className="space-y-4">
       <InputForm
         type="text"
         name="email"
-        placeholder="farel@gmail.com"
+        placeholder="Input Your Email"
         label="Email"
+      />
+      <InputForm
+        type="text"
+        name="username"
+        placeholder="Your Username"
+        label="Username"
       />
       <InputForm
         type="password"
         name="password"
-        placeholder="********"
+        placeholder="Password"
         label="Password"
       />
       <div className="text-center">
@@ -21,11 +27,11 @@ const FormLogin = () => {
           type="submit"
           className="w-full px-4 py-2 font-semibold text-white transition-all duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
         >
-          Login
+          Register
         </button>
       </div>
     </form>
   );
 };
 
-export default FormLogin;
+export default FormRegister;
